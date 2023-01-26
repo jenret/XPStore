@@ -17,6 +17,10 @@ nav > a {
     color: #006992;
 }
 
+nav > a:hover {
+    color: #c8e7e7;
+}
+
 body {
     background-color: #E0FBFC;
 }
@@ -24,6 +28,7 @@ body {
 button {
     background-color: #006992;
     color: #E0FBFC;
+    border: none;
     border-radius: 5px;
 }
 
@@ -31,6 +36,18 @@ ul {
     list-style-type: none;
 }
 
+#itemCard {
+    width: 10%;
+    height: 20%;
+    padding: 20px;
+    margin: 10px;
+}
+
+#itemImage {
+    width: 50%;
+    height: 60%;
+}
+
 #itemCard:hover {
-    background-color: #d8e1e1;
+    background-color: #c8e7e7;
 }
