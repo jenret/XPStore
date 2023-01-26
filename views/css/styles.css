@@ -21,6 +21,10 @@ nav > a:hover {
     color: #c8e7e7;
 }
 
+#cartImg {
+    justify-items: right;
+}
+
 body {
     background-color: #E0FBFC;
 }
