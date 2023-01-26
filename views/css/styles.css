@@ -5,4 +5,32 @@ font-family: 'Red Hat Display', sans-serif;
 
 colors:
 
+sapphire blue: #006992
+light cyan: #E0FBFC
+oxford blue: #001D4A
+sunglow: #FDCA40
+rose madder: #DF2935
 */
+
+nav > a {
+    text-decoration: none;
+    color: #006992;
+}
+
+body {
+    background-color: #E0FBFC;
+}
+
+button {
+    background-color: #006992;
+    color: #E0FBFC;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#itemCard:hover {
+    background-color: #d8e1e1;
+}
