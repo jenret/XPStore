@@ -60,5 +60,6 @@ ul {
 }
 
 #itemCard:hover {
+    border-radius: 5px;
     background-color: #c8e7e7;
 }
