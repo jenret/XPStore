@@ -90,10 +90,14 @@ ul {
 
 footer {
     position: absolute;
+    left: 0;
     bottom: 0;
-    width: auto;
+    width: 100%;
     height: auto;
-    padding: 5px;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
     background-color: #001D4A;
     color: #FDCA40;
     text-decoration: underline;
