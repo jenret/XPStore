@@ -3,26 +3,28 @@ var itemSection = document.getElementById("itemSection")
 
 
 window.onload = (event) => {
-    sessionCart = sessionStorage.getItem('cart');
-    cart = JSON.parse(sessionCart)
+    var sessionCart = localStorage.getItem('cart');
+    var cart = JSON.parse(sessionCart)
 
-    alert(cart[0].price)
+    console.log(localStorage.getItem('cart'))
+
+    // alert(cart[0])
 
     itemCount = 0;
     itemSection.innerHTML = ""
 
-    for (var item of cart) {
-        itemCard = `<div id="itemCard">
-        <img id = "itemImage" src = "../public/images/items/` + item.name + `.jpg" >
-        <p id="itemDescription">` + item.name + `</p>
-        <p>` + item.price + `</p>
-        <button id="removeFromCart" onclick="removeItemFromCart(` + item.name + `, ${item.price})">Buy</button>
-        </div >`
-        itemSection.innerHTML += itemCard
-        itemCount++;
+    // for (var item of cart) {
+    //     itemCard = `<div id="itemCard">
+    //     <img id = "itemImage" src = "../public/images/items/` + item.name + `.jpg" >
+    //     <p id="itemDescription">` + item.name + `</p>
+    //     <p>` + item.price + `</p>
+    //     <button id="removeFromCart" onclick="removeItemFromCart(` + item.name + `, ${item.price})">Buy</button>
+    //     </div >`
+    //     itemSection.innerHTML += itemCard
+    //     itemCount++;
 
-        totalPrice += item.price
-    }
+    //     totalPrice += item.price
+    // }
 
     totalPriceHTML.innerHTML = totalPrice
 

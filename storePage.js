@@ -31,7 +31,9 @@ function addItemToCart(name, price) {
     // for (var item of cart) {
     //     console.log(item.id + " - " + item.name + " - " + item.price)
     // }
-    sessionStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    console.log(localStorage.getItem('cart'))
 
 }
 
