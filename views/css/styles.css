@@ -12,9 +12,16 @@ sunglow: #FDCA40
 rose madder: #DF2935
 */
 
+nav {
+    background-color: #001D4A;
+    padding: 5px 5px 8px 5px;
+    text-align: center;
+}
 nav > a {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 2px;
     text-decoration: none;
-    color: #006992;
+    color: #E0FBFC;
 }
 
 nav > a:hover {
@@ -22,7 +29,12 @@ nav > a:hover {
 }
 
 #cartImg {
-    justify-items: right;
+    float: right;
+    cursor: pointer;
+}
+
+#magnifyGlassImg {
+    cursor: pointer;
 }
 
 body {
@@ -30,10 +42,21 @@ body {
 }
 
 button {
+    padding: 5px;
     background-color: #006992;
     color: #E0FBFC;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #015170;
+}
+
+#checkoutButton {
+    float: right;
+    padding: 10px;
 }
 
 ul {
@@ -62,4 +85,24 @@ ul {
 #itemCard:hover {
     border-radius: 5px;
     background-color: #c8e7e7;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #001D4A;
+    color: #FDCA40;
+    text-decoration: underline;
+}
+
+footer > a {
+    color: #FDCA40;
 }
