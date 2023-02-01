@@ -20,14 +20,17 @@ window.onload = (event) => {
         <img id = "itemImage" src = "../public/images/items/` + item.name + `.jpg" >
         <p id="itemDescription">` + item.name + `</p>
         <p>` + item.price + `</p>
-        <button id="removeFromCart" onclick="removeItemFromCart(` + item.name + `, ${item.price})">Buy</button>
+        <button id="removeFromCart" onclick="removeItemFromCart(` + item.name + `, ${item.price})">Remove</button>
         </div >`
         itemSection.innerHTML += itemCard
         itemCount++;
 
         totalPrice += item.price
+
+        
+        
     }
 
-    totalPriceHTML.innerHTML = totalPrice
+    totalPriceHTML.innerHTML = Math.round(totalPrice * 100) / 100
 
 }
