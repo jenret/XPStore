@@ -42,6 +42,18 @@ body {
     margin-bottom: 20%;
 }
 
+h1, h2 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+span {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 button {
     padding: 5px;
     background-color: #006992;
@@ -49,6 +61,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 button:hover {
@@ -102,6 +115,7 @@ footer {
     background-color: #001D4A;
     color: #FDCA40;
     text-decoration: underline;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 footer > a {
