@@ -22,7 +22,8 @@ var cart = [];
 cartCount = 0
 
 function addItemToCart(name, price) {
-    cartCount++;
+    
+    cart = JSON.parse(localStorage.getItem('cart'))
 
     item = { "id": cartCount, "name": name, "price": price}
 
@@ -34,6 +35,8 @@ function addItemToCart(name, price) {
     localStorage.setItem('cart', JSON.stringify(cart));
 
     console.log(localStorage.getItem('cart'))
+
+    cartCount++;
 
 }
 
