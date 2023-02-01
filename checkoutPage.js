@@ -6,9 +6,17 @@ var cart = []
 
 function removeItemFromCart(itemId) {
 
-    if (itemId > -1) { // only splice array when item is found
-        cart.splice(itemId, 1); // 2nd parameter means remove one item only
+    console.log(itemId, " itemid")
+
+    for(let i = 0; i < cart.length; i ++){
+        if(cart[i].id == itemId){
+            cart.splice(i, 1)
+        }
     }
+
+    // if (itemId > -1) { // only splice array when item is found
+    //     cart.splice(itemId, 1); // 2nd parameter means remove one item only
+    // }
 
     localStorage.setItem("cart", JSON.stringify(cart))
 

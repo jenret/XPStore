@@ -25,13 +25,19 @@ function addItemToCart(name, price) {
     
     cart = JSON.parse(localStorage.getItem('cart'))
 
-    item = { "id": cartCount, "name": name, "price": price}
+    item = { "id": 0, "name": name, "price": price}
+
+    
 
     cart.push(item)
 
-    // for (var item of cart) {
-    //     console.log(item.id + " - " + item.name + " - " + item.price)
-    // }
+    for(let i = 0; i < cart.length; i ++){
+        cart[i].id = i
+    }
+
+    for (var item of cart) {
+        console.log(item.id + " - " + item.name + " - " + item.price)
+    }
     localStorage.setItem('cart', JSON.stringify(cart));
 
     console.log(localStorage.getItem('cart'))
