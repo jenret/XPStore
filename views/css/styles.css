@@ -39,6 +39,7 @@ nav > a:hover {
 
 body {
     background-color: #E0FBFC;
+    margin-bottom: 20%;
 }
 
 button {
@@ -89,7 +90,7 @@ ul {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
