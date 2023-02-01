@@ -47,3 +47,5 @@ window.onload = (event) => {
     totalPriceHTML.innerHTML = Math.round(totalPrice * 100) / 100
 
 }
+
+module.exports = checkoutPage;
