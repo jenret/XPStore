@@ -31,6 +31,13 @@ nav > a:hover {
 #cartImg {
     float: right;
     cursor: pointer;
+    display: block;
+    margin: auto;
+}
+
+#searchBar {
+    display: block;
+    margin: 0 auto;
 }
 
 #magnifyGlassImg {
@@ -48,10 +55,6 @@ h1, h2 {
 
 p {
     font-family: 'Red Hat Display', sans-serif;
-}
-
-span {
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 button {
