@@ -21,7 +21,7 @@ var cart = [];
 
 cartCount = 0
 
-function addItemToCart(name, price) {
+export function addItemToCart(name, price) {
     
     cart = JSON.parse(localStorage.getItem('cart'))
 
@@ -47,8 +47,6 @@ function addItemToCart(name, price) {
 }
 
 
-
-
 window.onload = (event) => {
 
     itemCount = 0;
@@ -68,6 +66,7 @@ window.onload = (event) => {
     }
 
 }
+
 
 // for (items in )
 // itemSection.innerHTML = ""
