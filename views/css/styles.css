@@ -14,12 +14,12 @@ rose madder: #DF2935
 
 nav {
     background-color: #001D4A;
-    padding: 5px 5px 8px 5px;
+    padding: 10px 5px 10px 5px;
     text-align: center;
 }
 nav > a {
     font-family: 'Nunito Sans', sans-serif;
-    padding: 2px;
+    padding: 5px;
     text-decoration: none;
     color: #E0FBFC;
 }
@@ -36,12 +36,18 @@ nav > a:hover {
 }
 
 #searchBar {
-    display: block;
-    margin: 0 auto;
+    display: inline-flex;
+    float: left;
+    margin: 12px;
+    padding: 5px;
+    width: 40%;
 }
 
 #magnifyGlassImg {
     cursor: pointer;
+    display: inline-flex;
+    float: left;
+    margin: 4px;
 }
 
 body {
@@ -50,11 +56,17 @@ body {
 }
 
 h1, h2 {
+    margin: 8%;
     font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
 }
 
 p {
     font-family: 'Red Hat Display', sans-serif;
+}
+
+#welcomeText {
+    text-align: center;
 }
 
 button {
