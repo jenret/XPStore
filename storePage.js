@@ -21,7 +21,9 @@ var cart = [];
 
 cartCount = 0
 
-export function addItemToCart(name, price) {
+function addItemToCart(name, price) {
+
+    localStorage.setItem("name", name)
     
     cart = JSON.parse(localStorage.getItem('cart'))
 
@@ -58,12 +60,14 @@ window.onload = (event) => {
         itemCard = `<div id="itemCard">
         <img onclick="addItemToCart(itemNameList[` + itemCount + `], ${randomPrice})" id = "itemImage" src = "../public/images/items/` + item + `.jpg" >
         <p id="itemDescription">` + item + `</p>
-        <p>` + randomPrice + `</p>
+        <p>$` + randomPrice + `</p>
         <button id="addToCart" onclick="addItemToCart(itemNameList[` + itemCount + `], ${randomPrice})">Buy</button>
         </div >`
         itemSection.innerHTML += itemCard
         itemCount++;
     }
+
+    localStorage.set("itemListSize", itemNameList.length())
 
 }
 
