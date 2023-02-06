@@ -23,6 +23,8 @@ cartCount = 0
 
 function addItemToCart(name, price) {
 
+    console.log(name);
+
     localStorage.setItem("name", name)
     
     cart = JSON.parse(localStorage.getItem('cart'))
@@ -67,12 +69,13 @@ window.onload = (event) => {
         itemCount++;
     }
 
-    localStorage.set("itemListSize", itemNameList.length())
+    localStorage.setItem("itemListSize", itemNameList.length)
 
 }
 
 function searchList() {
     searchTerm = document.getElementById("searchBar").value
+    itemCount = 0;
     itemSection.innerHTML = ""
     for (var item of itemNameList) {
         if(item.includes(searchTerm)) {
