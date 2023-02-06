@@ -39,7 +39,7 @@ nav > a:hover {
 
 /* found on: https://codepen.io/hughker/pen/PzZOQP */
 .badge:after {
-    content: attr(data-count);
+    /* content: attr(data-count);
     position: absolute;
     background: #DF2935;
     height: 2rem;
@@ -53,7 +53,7 @@ nav > a:hover {
     color: white;
     border: 1px solid #DF2935;
     font-family: sans-serif;
-    font-weight: bold;
+    font-weight: bold; */
   }
 
 #searchBar {
