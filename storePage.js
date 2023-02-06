@@ -70,8 +70,3 @@ window.onload = (event) => {
     localStorage.set("itemListSize", itemNameList.length())
 
 }
-
-
-// for (items in )
-// itemSection.innerHTML = ""
-
