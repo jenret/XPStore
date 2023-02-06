@@ -23,7 +23,6 @@ cartCount = 0
 
 function addItemToCart(name, price) {
 
-    console.log(name);
 
     localStorage.setItem("name", name)
     
@@ -75,17 +74,19 @@ window.onload = (event) => {
 
 function searchList() {
     searchTerm = document.getElementById("searchBar").value
+    filterNames(searchTerm);
+    console.log(filteredArray)
     itemCount = 0;
     itemSection.innerHTML = ""
-    for (var item of itemNameList) {
+    for (var item of filteredArray) {
         if(item.includes(searchTerm)) {
             var precision = 100; // 2 decimals
             var randomPrice = Math.floor(Math.random() * (3 * precision - 1 * precision) + 1 * precision) / (1*precision);
             itemCard = `<div id="itemCard">
-            <img onclick="addItemToCart(itemNameList[` + itemCount + `], ${randomPrice})" id = "itemImage" src = "../public/images/items/` + item + `.jpg" >
+            <img onclick="addItemToCart(filteredArray[` + itemCount + `], ${randomPrice})" id = "itemImage" src = "../public/images/items/` + item + `.jpg" >
             <p id="itemDescription">` + item + `</p>
             <p>$` + randomPrice + `</p>
-            <button id="addToCart" onclick="addItemToCart(itemNameList[` + itemCount + `], ${randomPrice})">Buy</button>
+            <button id="addToCart" onclick="addItemToCart(filteredArray[` + itemCount + `], ${randomPrice})">Buy</button>
             </div >`
             itemSection.innerHTML += itemCard
             itemCount++;
@@ -93,3 +94,13 @@ function searchList() {
     }
 }
 
+let filteredArray = [];
+
+function filterNames(searchTerm){
+    filteredArray = []
+    for(let i = 0; i < itemNameList.length; i ++){
+        if(itemNameList[i].includes(searchTerm)){
+            filteredArray.push(itemNameList[i])
+        }
+    }
+}
